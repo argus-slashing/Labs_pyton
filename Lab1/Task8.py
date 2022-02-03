@@ -1,6 +1,4 @@
-from array import array
 import random
-import math 
 
 def N_Generator():
     n = random.randint(1, 100)
@@ -23,4 +21,5 @@ def N_Generator():
         array.append(0)
     
     print(f"Массив увеличился на {int(size)} элементов")
+
 N_Generator()
