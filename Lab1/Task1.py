@@ -6,8 +6,6 @@ def get_count(str):
             break
     return(len(str) - tmp)
 
-
-
 def transform():
     s = input("Введите число:")
     cash = s.replace(",",".")
@@ -16,6 +14,6 @@ def transform():
         print("Некорректный формат!")
     else:
         key = float(cash)%1
-        print(int(key*10**count), "копеек")
+        print(int(float(cash) - key),"рублей", int(key*10**count), "копеек")
 
 transform()
